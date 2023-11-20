@@ -1638,7 +1638,7 @@ footer p {
     }
 
     .areacardapio .left {
-        width: 370px;
+        width: 100%;
         background-position: right;
         padding: 10px;
     }
@@ -1658,7 +1658,7 @@ footer p {
     }
 
     .areacardapio .right2 {
-        width: 375px;
+        width: 100%;
         height: auto;
         background-color: #3B200B;
         display: flex;
