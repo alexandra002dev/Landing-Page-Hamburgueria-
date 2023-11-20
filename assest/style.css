@@ -1,0 +1,1786 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAF3F2;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 63.874px;
+    display: flex;
+    justify-content: center;
+    background-color: #3B200B0D;
+    position: absolute;
+
+}
+
+.header {
+    max-width: 1200px;
+    width: 100%;
+    height: 63.874px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo svg {
+    width: 29.492px;
+    height: 30.809px;
+    color: #1D0605E5;
+    margin-right: 5px;
+}
+
+.header .logo .textLogo {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: Lato;
+    font-size: 29.381px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32.319px;
+    text-transform: uppercase;
+}
+
+.header .textLogo span {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lato";
+    font-size: 29.381px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.319px;
+    text-transform: uppercase;
+}
+
+.menumobile {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #635352;
+    margin-right: 16px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu nav ul li:hover {
+    transform: scale(1.1) translatey(-5px);
+
+}
+
+.menu li a:hover,
+.menu .active a {
+    color: #34201F;
+    font-weight: bold;
+}
+
+li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #34201F;
+    position: absolute;
+    bottom: -3px;
+    left: 13px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+}
+
+.contato .ifood {
+    width: 27px;
+    height: 14.269px;
+    margin-right: 6.37px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contato .insta {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 5px;
+
+}
+
+.contato .insta:hover {
+    transform: scale(1.1) translatey(-5px);
+}
+
+.contato .ifood:hover {
+    transform: scale(1.1) translatey(-5px);
+}
+
+.contato a {
+    display: inline-flex;
+    padding: 4px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: rgb(239, 228, 26);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.2px;
+    transition: all .3s ease-in-out;
+    color: #34201F;
+}
+
+.contato a:hover {
+    background-color: #ffbc5f;
+}
+
+.contato .zap {
+    width: 24px;
+    height: 24px;
+    color: #34201F;
+}
+
+.contato svg:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    background: url("/assest/imagens/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+
+.area_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.area_banner .text1 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lato";
+    font-size: 22.861px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.861px;
+}
+
+.area_banner h1 {
+    color: #3B200B;
+    font-family: "Lilita One";
+    font-size: 77.651px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85.416px;
+    text-transform: uppercase;
+}
+
+.area_banner h1 span {
+    color: #F59A1B;
+    font-family: "Lilita One";
+    font-size: 77.651px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85.416px;
+    text-transform: uppercase;
+}
+
+.area_banner p {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 22.861px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.005px;
+}
+
+.area_banner p span {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 22.861px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32.005px;
+    background-color: #F59A1B;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button a {
+    display: inline-flex;
+    padding: 10.16px 20.321px;
+    background-color: #F43127;
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 22.861px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32.005px;
+    text-decoration: none;
+    border-radius: 5.08px;
+    transition: all .5s;
+}
+
+.button a:hover {
+    background-color: #F59A1B;
+    color: rgba(29, 6, 5, 0.69);
+    font-weight: 900;
+}
+
+.areaRetanguloB {
+    display: flex;
+    justify-content: center;
+
+}
+
+.retangulo {
+    width: 70%;
+    height: 118.538px;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(178, 155, 132, 0.50);
+    display: flex;
+    margin-top: -60px;
+}
+
+.retangulo .conteudo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 21px 29px;
+}
+
+.conteudo .circulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #FAE2CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #60340B;
+}
+
+.descricao {
+    margin-left: 10px;
+}
+
+.descricao h3 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.area_conteniner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.area {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.area h2 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-transform: uppercase;
+}
+
+.area p {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url("/assest/imagens/Rectangle\ 617.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left .titulo {
+    color: rgba(255, 255, 255, 0.90);
+    font-family: "Lilita One";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-transform: uppercase;
+}
+
+.left .grama {
+    color: rgba(255, 255, 255, 0.69);
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.right .apenas {
+    color: rgba(255, 255, 255, 0.69);
+    font-family: "Lato";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+    margin-bottom: 5px;
+}
+
+.right .day {
+    color: rgba(255, 255, 255, 0.90);
+    font-family: "Lilita One";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-transform: uppercase;
+}
+
+.item2 {
+    background-image: url("/assest/imagens/Rectangle\ 618.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.titulo2 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.grama2 {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.item3 {
+    background-image: url("/assest/imagens/Rectangle\ 619.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.horarios {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.horarios .retanguloVermelho {
+    width: 85%;
+    height: 130.935px;
+    border-radius: 10px;
+    background-color: #F43127;
+    margin-right: 50px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redesocial p {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.redesocial h2 {
+    color: #F43127;
+    font-family: "Lilita One";
+    font-size: 28.02px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.02px;
+    text-transform: uppercase;
+}
+
+.retanguloVermelho .desc {
+    margin-left: 10px;
+}
+
+.retanguloVermelho .barra {
+    width: 2px;
+    height: 82.741px;
+    background-color: rgba(29, 6, 5, 0.40);
+    margin: 20px;
+}
+
+.desc h2 {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lilita One";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-transform: uppercase;
+}
+
+.areacardapio {
+    display: flex;
+    margin-top: 20px;
+}
+
+.areacardapio .left {
+    background-image: url("/assest/imagens/Rectangle\ 610.png");
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 71px 30px;
+
+}
+
+.arealeft {
+    margin-left: 250px;
+    width: 459.587px;
+}
+
+.arealeft h1 {
+    color: #3B200B;
+    font-family: "Lilita One";
+    font-size: 41.421px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.563px;
+    text-transform: uppercase;
+}
+
+.arealeft p {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.areacardapio .right2 {
+    flex: 1;
+    background-color: #3B200B;
+    display: flex;
+    flex-direction: column;
+    padding: 71px 20px;
+}
+
+.areacardapio .right2 h1 {
+    font-family: "Lilita One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-transform: uppercase;
+    color: #F59A1B;
+    margin-bottom: 15px;
+}
+
+.right2 .detalhecardapio {
+    display: flex;
+    color: #FAE4D0;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.detalhecardapio .titulo {
+    display: flex;
+}
+
+.right2 .detalhecardapio h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: "Lilita One";
+}
+
+.right2 .detalhecardapio .pontos {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.right2 .detalhecardapio h4 {
+    font-family: "Lilita One";
+    text-transform: uppercase;
+}
+
+.right2 .detalhecardapio p {
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.area_conteniner {
+    display: flex;
+    justify-content: center;
+}
+
+.section4 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    margin-bottom: 128px;
+}
+
+.section4 .ciruloatras {
+    width: 570px;
+    height: 308.154px;
+    flex-shrink: 0;
+    border-radius: 35px 154.077px 154.077px 35px;
+    background-color: rgba(250, 226, 203, 0.90);
+    margin-top: 30px;
+}
+
+.section4 .imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .imagem .ciruloatras img {
+    margin-top: -150px;
+}
+
+.section4 .textoRight {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.textoRight h1 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 41.723px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45.895px;
+    text-transform: uppercase;
+}
+
+.textoRight h1 span {
+    background-color: #F59A1B;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.textoRight p {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 20.861px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.206px;
+    margin-top: 10px;
+}
+
+.textoRight svg {
+    margin-top: 128px;
+}
+
+.area-banner input {
+    display: none;
+}
+
+.slides2 {
+    width: 350%;
+}
+
+.slide2 {
+    width: 100%;
+    display: flex;
+}
+
+.area-banner {
+    overflow: hidden;
+    width: 1300px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.cardr {
+    width: 370px;
+    height: 177.835px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    background-color: #FFF;
+
+}
+
+.card-area {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 370px;
+}
+
+.card-area p {
+    color: #635352;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+
+.card-area .img {
+    width: 48.503px;
+    height: 48.503px;
+    border-radius: 48.503px;
+    background-image: url("https://api.brchallenges.com/avatars/person-3.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.card-area .sobre {
+    display: flex;
+    align-items: center;
+
+}
+
+.card-area .nome h2 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-transform: uppercase;
+}
+
+.card-area .idadeeProf {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: " Lato";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+.idadeeProf .circulo {
+    height: 5px;
+    width: 5px;
+    background-color: rgba(29, 6, 5, 0.90);
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation2 .selec {
+    width: 150px;
+    height: 4px;
+    background-color: #FFAD0D;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navigation2 label {
+    width: 150px;
+    height: 4px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.publicacao {
+    margin-top: 128px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publicacao h1 {
+    color: rgba(29, 6, 5, 0.90);
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-transform: uppercase;
+}
+
+.publicacao p {
+    color: rgba(29, 6, 5, 0.69);
+    text-align: center;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.mostruario {
+    margin-top: 10px;
+}
+
+.mostruario .faixa {
+    color: rgba(29, 6, 5, 0.90);
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 28.02px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.02px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    background-color: #F59A1B;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.section4 .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entregas {
+    margin-left: 50px;
+
+}
+
+.entregas h1 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.opcao {
+    width: 569.438px;
+    height: 90px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(178, 155, 132, 0.50);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.opcao:hover {
+    transform: scale(1.1) translatey(-5px);
+}
+
+.opcao .circulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #FAE2CB;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao .barra {
+    width: 0.134px;
+    height: 45.304px;
+    background-color: rgba(29, 6, 5, 0.40);
+    margin-right: 20px;
+}
+
+.opcao .cont h2 {
+    color: rgba(29, 6, 5, 0.90);
+    font-family: "Lilita One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.opcao .cont p {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.2px;
+
+}
+
+.FacaSeuPedido {
+    border-radius: 10px;
+    background-color: #F43127;
+    width: 90%;
+    height: 123.04px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.FacaSeuPedido .img .circulo {
+    width: 94.828px;
+    height: 94.828px;
+    background-color: rgba(29, 6, 5, 0.20);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FacaSeuPedido .barra {
+    width: 2px;
+    height: 82.741px;
+    background-color: rgba(29, 6, 5, 0.40);
+    margin-right: 10px;
+}
+
+.FacaSeuPedido .cont {
+    justify-content: left;
+}
+
+.FacaSeuPedido .cont h2 {
+    color: rgba(29, 6, 5, 0.69);
+    font-family: "Lilita One";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-transform: uppercase;
+}
+
+.FacaSeuPedido .cont p {
+    color: rgba(255, 255, 255, 0.90);
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-right: 20px;
+}
+
+.FacaSeuPedido .cont span {
+    font-weight: 900;
+}
+
+.FacaSeuPedido a {
+    border-radius: 4px;
+    background: #FAE4D0;
+    color: #F43127;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.FacaSeuPedido a:hover {
+    color: #FAE4D0;
+    background-color: #85130d;
+}
+
+.local {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.local h1 {
+    color: rgba(29, 6, 5, 0.90);
+    text-align: center;
+    font-family: "Lilita One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-transform: uppercase;
+}
+
+.local p {
+    color: rgba(29, 6, 5, 0.69);
+    text-align: center;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.local img {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer .logo a .textLogo {
+    color: #F59A1B;
+    font-family: Lato;
+    font-size: 29.403px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.343px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+footer .logo a .textLogo span {
+    color: #F59A1B;
+    font-family: Lato;
+    font-size: 29.403px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32.343px;
+    text-transform: uppercase;
+}
+
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-family: "Lato";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #635352;
+    margin-right: 16px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li:hover {
+    transform: scale(1.1) translatey(-5px);
+
+}
+
+footer li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #34201F;
+    position: absolute;
+    bottom: -3px;
+    left: 13px;
+}
+
+footer .svg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+footer .svg svg {
+    transition: all 0.3s ease-in-out;
+}
+
+footer .svg svg:hover {
+    transform: scale(1.1) translatey(-5px);
+}
+
+footer .linha {
+    margin: 15px;
+    width: 1170px;
+    height: 2px;
+    background-color: rgba(29, 6, 5, 0.15);
+}
+
+footer p span {
+    color: rgba(2, 14, 31, 0.69);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.134px;
+}
+
+footer p {
+    color: rgba(2, 14, 31, 0.30);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.134px;
+    margin-bottom: 20px;
+}
+
+@media (min-width:795px) and (max-width:1125px) {
+    .header {
+        max-width: 800px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header .logo a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header .logo svg {
+        width: 20.492px;
+        height: 20.809px;
+        color: #1D0605E5;
+        margin-right: 5px;
+    }
+
+    .header .logo .textLogo {
+        font-size: 15px;
+    }
+
+    .header .textLogo span {
+        font-size: 15px;
+    }
+    .menumobile{
+        display: none;
+    }
+    .menu nav ul li a {
+        font-size: 12px;
+    }
+
+    .area_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 60px;
+        margin-top: 150px;
+    }
+
+    .retangulo {
+        width: 80%;
+    }
+
+    .descricao h3 {
+        font-size: 16px;
+    }
+
+    .area_conteniner {
+        padding: 20px;
+    }
+
+    .areacardapio {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .arealeft h1 {
+        width: 390px;
+    }
+
+    .arealeft p {
+        width: 390px;
+    }
+
+    .section4 {
+        flex-direction: column;
+
+    }
+
+    .entregas {
+        margin-top: 20px;
+    }
+
+    .section4 .ciruloatras {
+        margin-bottom: 50px;
+    }
+
+    .FacaSeuPedido {
+        width: 900px;
+
+    }
+}
+
+@media (min-width:500px) and (max-width:794px) {
+    .header {
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header .logo a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header .logo svg {
+        width: 20.492px;
+        height: 20.809px;
+        color: #1D0605E5;
+        margin-right: 5px;
+    }
+
+    .header .logo .textLogo {
+        font-size: 20px;
+    }
+
+    .header .textLogo span {
+        font-size: 20px;
+    }
+
+    .menumobile {
+        display: flex;
+    }
+
+    .contato {
+        display: none;
+    }
+    .menu nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(249, 244, 244, 0.9);
+        width: 70vw;
+        margin-top: 30px;
+       padding: 30px;
+    }
+
+    .menu ul{
+        flex-direction: column; 
+    }
+
+    .banner {
+        background: url("/assest/imagens/Banner\ mobile\ 1.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        height: 950px;
+    }
+
+    .area_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
+    .retangulo {
+        width: 70%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .retangulo .conteudo {
+        border-bottom: 1px solid #c4c0be;
+    }
+
+
+    .descricao h3 {
+        font-size: 16px;
+    }
+
+    .area p {
+        width: 450px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 379px 379px 379px;
+
+    }
+
+    .item1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .item2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .horarios {
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .horarios .retanguloVermelho {
+        max-width: 450px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .area_conteniner {
+        padding: 20px;
+       
+    }
+
+    .areacardapio .left {
+        width: 500px;
+        background-position: right;
+        width: 100%;
+       
+    }
+
+    .arealeft {
+        margin-left: 250px;
+    }
+
+    .areacardapio {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .areacardapio .right2 {
+        width: 100%;
+        height: auto;
+        background-color: #3B200B;
+        display: flex;
+        flex-direction: column;
+        padding: 71px 30px;
+    }
+
+    .arealeft h1 {
+        width: 390px;
+    }
+
+    .arealeft p {
+        width: 390px;
+    }
+
+    .area-banner {
+        overflow: hidden;
+        width: 90%;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .card-area {
+        height: 300px;
+    }
+
+    .card-area p {
+        font-size: 12px;
+        width: 360px;
+    }
+
+    .navigation2 {
+        width: 400px;
+    }
+
+    .section4 {
+        flex-direction: column;
+    }
+
+    .section4 .ciruloatras {
+        margin-bottom: 50px;
+    }
+
+    .entregas {
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .opcao {
+        width: 400px;
+        height: 90px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 40px 0px rgba(178, 155, 132, 0.50);
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .FacaSeuPedido {
+        width: 400px;
+        flex-direction: column;
+        height: 280.875px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .FacaSeuPedido .barra {
+        width: 300px;
+        height: 2px;
+        margin-top: 5px;
+
+    }
+
+    .FacaSeuPedido .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        max-width: 1200px;
+        width: 100%;
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        padding: 10px;
+    }
+}
+
+
+@media (min-width:370px) and (max-width:499px) {
+    .header {
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header .logo a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header .logo svg {
+        width: 20.492px;
+        height: 20.809px;
+        color: #1D0605E5;
+        margin-right: 5px;
+    }
+
+    .header .logo .textLogo {
+        font-size: 20px;
+    }
+
+    .header .textLogo span {
+        font-size: 20px;
+    }
+
+    .menumobile {
+        display: flex;
+    }
+
+    .contato {
+        display: none;
+    }
+    .menu ul{
+        flex-direction: column; 
+    }
+
+    .menu nav {
+        display: flex;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(249, 244, 244, 0.9);
+        width: 90vw;
+        margin-top: 30px;
+       padding: 30px;
+       margin-left: -100px;
+    }
+
+    .banner {
+        background: url("/assest/imagens/Banner\ mobile\ 1.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        height: 950px;
+    }
+
+    .area_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
+    .retangulo {
+        width: 70%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .retangulo .conteudo {
+        border-bottom: 1px solid #c4c0be;
+    }
+
+
+    .descricao h3 {
+        font-size: 16px;
+    }
+
+    .area p {
+        width: 370px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 379px 379px 379px;
+
+    }
+
+    .item1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .item2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .horarios {
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .horarios .retanguloVermelho {
+        max-width: 370px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .horarios .retanguloVermelho .barra {
+        width: 290px;
+        height: 2px;
+
+    }
+
+    .area_conteniner {
+        padding: 20px;
+    }
+
+    .areacardapio .left {
+        width: 370px;
+        background-position: right;
+        padding: 10px;
+    }
+
+    .arealeft {
+        margin-left: 50px;
+        width: 370px;
+    }
+
+    .areacardapio {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .areacardapio .right2 {
+        width: 375px;
+        height: auto;
+        background-color: #3B200B;
+        display: flex;
+        flex-direction: column;
+        padding: 71px 30px;
+    }
+
+    .arealeft h1 {
+        width: 390px;
+    }
+
+    .arealeft p {
+        width: 370px;
+    }
+
+    .section4 .ciruloatras {
+        width: 350px;
+        height: 308.154px;
+        flex-shrink: 0;
+        border-radius: 35px 154.077px 154.077px 35px;
+        background-color: rgba(250, 226, 203, 0.90);
+        margin-top: 30px;
+    }
+
+    .section4 .imagem img {
+        width: 310.446px;
+        height: 399.702px;
+        position: absolute;
+        bottom: -4405px;
+    }
+
+    .area-banner {
+        overflow: hidden;
+        width: 500px;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .card-area {
+        height: 300px;
+    }
+
+    .card-area p {
+        font-size: 12px;
+        width: 360px;
+    }
+
+    .cardr {
+        width: 350px;
+    }
+
+    .navigation2 {
+        width: 350px;
+    }
+
+    .section4 {
+        flex-direction: column;
+    }
+
+    .section4 .imagem .tel {
+        position: absolute;
+        bottom: -6420px;
+        left: -19px;
+    }
+
+    .section4 .ciruloatras {
+        margin-bottom: 50px;
+    }
+
+    .entregas {
+        margin-left: 20px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .opcao {
+        width: 370px;
+        height: 90px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 40px 0px rgba(178, 155, 132, 0.50);
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .FacaSeuPedido {
+        width: 370px;
+        flex-direction: column;
+        height: 280.875px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .FacaSeuPedido .barra {
+        width: 300px;
+        height: 2px;
+        margin-top: 5px;
+
+    }
+
+    .FacaSeuPedido .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        max-width: 1200px;
+        width: 100%;
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        padding: 10px;
+    }
+}
