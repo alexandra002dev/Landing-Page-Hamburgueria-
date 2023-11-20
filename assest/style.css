@@ -181,7 +181,7 @@ li a:hover::after {
 }
 
 .banner {
-    background: url("/assest/imagens/banner.jpg");
+    background: url("../assest/imagens/banner.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -365,7 +365,7 @@ li a:hover::after {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url("/assest/imagens/Rectangle\ 617.png");
+    background-image: url("../assest/imagens/Rectangle\ 617.png");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -420,7 +420,7 @@ li a:hover::after {
 }
 
 .item2 {
-    background-image: url("/assest/imagens/Rectangle\ 618.png");
+    background-image: url("../assest/imagens/Rectangle\ 618.png");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -450,7 +450,7 @@ li a:hover::after {
 }
 
 .item3 {
-    background-image: url("/assest/imagens/Rectangle\ 619.png");
+    background-image: url("../assest/imagens/Rectangle\ 619.png");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -526,7 +526,7 @@ li a:hover::after {
 }
 
 .areacardapio .left {
-    background-image: url("/assest/imagens/Rectangle\ 610.png");
+    background-image: url("../assest/imagens/Rectangle\ 610.png");
     background-position: center;
     background-size: cover;
     flex: 1;
