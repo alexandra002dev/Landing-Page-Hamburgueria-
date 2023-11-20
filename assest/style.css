@@ -1548,7 +1548,7 @@ footer p {
     }
 
     .menu nav {
-        display: flex;
+        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgba(249, 244, 244, 0.9);
@@ -1647,6 +1647,9 @@ footer p {
         margin-left: 50px;
         width: 370px;
     }
+    .arealeft h1 {
+        font-size: 30px;
+    }
 
     .areacardapio {
         display: flex;
@@ -1680,13 +1683,6 @@ footer p {
         margin-top: 30px;
     }
 
-    .section4 .imagem img {
-        width: 310.446px;
-        height: 399.702px;
-        position: absolute;
-        bottom: -4405px;
-    }
-
     .area-banner {
         overflow: hidden;
         width: 500px;
@@ -1713,12 +1709,6 @@ footer p {
 
     .section4 {
         flex-direction: column;
-    }
-
-    .section4 .imagem .tel {
-        position: absolute;
-        bottom: -6420px;
-        left: -19px;
     }
 
     .section4 .ciruloatras {
