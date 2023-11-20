@@ -1559,7 +1559,7 @@ footer p {
     }
 
     .banner {
-        background: url("/assest/imagens/Banner\ mobile\ 1.png");
+        background: url("../assest/imagens/Banner\ mobile\ 1.png");
         background-size: cover;
         background-position: center;
         display: flex;
